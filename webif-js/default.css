@@ -1,0 +1,40 @@
+body {
+    margin-left: 0;
+}
+
+#left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 2em;
+    background: #3399CC;
+}
+
+#main {
+    vertical-align: top;
+    display: table-cell;
+    border: 1px solid black;
+}
+
+table#result {
+    background: black;
+    border: 3px solid gray;
+}
+span.word {
+    color: blue;
+}
+span.text {
+    color: gray;
+}
+span.grammar {
+    color: red;
+}
+span.reference {
+    color: magenta;
+}
+span.country {
+    color: cyan;
+}
+span.context {
+    color: white;
+}
+

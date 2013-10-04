@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- YUI -->
+
+<!-- Dependencies -->  
+
+<script type='text/javascript' src="http://yui.yahooapis.com/2.4.1//build/yahoo/yahoo-min.js" />
+<script type='text/javascript' src="http://yui.yahooapis.com/2.4.1//build/event/event-min.js" />
+<script type='text/javascript' src="http://yui.yahooapis.com/2.4.1//build/dom/dom-min.js" />
+<script type='text/javascript' src="http://yui.yahooapis.com/2.4.1//build/connection/connection-min.js" />
+<script type='text/javascript' src="http://yui.yahooapis.com/2.4.1//build/json/json-beta-min.js" />
+
+<!-- Dependencies -->  
+<script type='text/javascript' src="yui//build/yahoo/yahoo-min.js"></script>
+<!-- Source files --> 
+<script type='text/javascript' src="yui//build/event/event-min.js"></script>
+<script type='text/javascript' src="yui//build/dom/dom-min.js"></script>
+<script type='text/javascript' src="yui//build/connection/connection-min.js"></script>
+<script type='text/javascript' src="yui//build/json/json-min.js"></script>
+
+<!-- Other libs -->
+<script type='text/javascript' src="jscript/common.js"></script>
+<script type='text/javascript' src="jscript/prototype.js"></script>
+
+<!-- Mine -->
+<script type='text/javascript' src='jscript/clue.js'></script>
+
+<link rel='stylesheet' type='text/css' href='default.css' />
+
+<title>Clue</title>
+
+</head>
+
+<body>
+
+<p id='top'>
+<input type='text' id='searchword' onkeyup='Dict.searchWord();' value=''></input>
+<select id="selectlang" onchange='Dict.resetLang(function() { Dict.searchWord() });'>
+<option value='test'>test</option>
+</select>
+
+</p>
+
+<div id='debug'>debug</div>
+
+<div id='results'>
+results
+</div>
+
+</body>
+
+</html>
